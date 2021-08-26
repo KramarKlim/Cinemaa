@@ -9,23 +9,35 @@
 /* Begin PBXBuildFile section */
 		4D2A15D726D7BE7400EA17A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2A15D626D7BE7400EA17A2 /* AppDelegate.swift */; };
 		4D2A15D926D7BE7400EA17A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2A15D826D7BE7400EA17A2 /* SceneDelegate.swift */; };
-		4D2A15DB26D7BE7400EA17A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2A15DA26D7BE7400EA17A2 /* ViewController.swift */; };
 		4D2A15DE26D7BE7400EA17A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D2A15DC26D7BE7400EA17A2 /* Main.storyboard */; };
 		4D2A15E126D7BE7400EA17A2 /* Cinemaa.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D2A15DF26D7BE7400EA17A2 /* Cinemaa.xcdatamodeld */; };
 		4D2A15E326D7BE7600EA17A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D2A15E226D7BE7600EA17A2 /* Assets.xcassets */; };
 		4D2A15E626D7BE7600EA17A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D2A15E426D7BE7600EA17A2 /* LaunchScreen.storyboard */; };
+		4D2A15EF26D7C1B000EA17A2 /* ImageFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2A15EE26D7C1B000EA17A2 /* ImageFetch.swift */; };
+		4D2A15F126D7C1D100EA17A2 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2A15F026D7C1D100EA17A2 /* DataManager.swift */; };
+		4D2A15F326D7C20C00EA17A2 /* extension Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2A15F226D7C20C00EA17A2 /* extension Array.swift */; };
+		4D2A15F526D7C21F00EA17A2 /* SaveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2A15F426D7C21F00EA17A2 /* SaveData.swift */; };
+		4D2A15F826D7C80300EA17A2 /* FilmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2A15F726D7C80300EA17A2 /* FilmModel.swift */; };
+		4D2A15FA26D7C82400EA17A2 /* TimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2A15F926D7C82400EA17A2 /* TimeModel.swift */; };
+		4D2A15FE26D7C88E00EA17A2 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2A15FD26D7C88E00EA17A2 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4D2A15D326D7BE7400EA17A2 /* Cinemaa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cinemaa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D2A15D626D7BE7400EA17A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D2A15D826D7BE7400EA17A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4D2A15DA26D7BE7400EA17A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4D2A15DD26D7BE7400EA17A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D2A15E026D7BE7400EA17A2 /* Cinemaa.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cinemaa.xcdatamodel; sourceTree = "<group>"; };
 		4D2A15E226D7BE7600EA17A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D2A15E526D7BE7600EA17A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D2A15E726D7BE7600EA17A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D2A15EE26D7C1B000EA17A2 /* ImageFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetch.swift; sourceTree = "<group>"; };
+		4D2A15F026D7C1D100EA17A2 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		4D2A15F226D7C20C00EA17A2 /* extension Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension Array.swift"; sourceTree = "<group>"; };
+		4D2A15F426D7C21F00EA17A2 /* SaveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveData.swift; sourceTree = "<group>"; };
+		4D2A15F726D7C80300EA17A2 /* FilmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmModel.swift; sourceTree = "<group>"; };
+		4D2A15F926D7C82400EA17A2 /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
+		4D2A15FD26D7C88E00EA17A2 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +72,9 @@
 			children = (
 				4D2A15D626D7BE7400EA17A2 /* AppDelegate.swift */,
 				4D2A15D826D7BE7400EA17A2 /* SceneDelegate.swift */,
-				4D2A15DA26D7BE7400EA17A2 /* ViewController.swift */,
+				4D2A15FC26D7C86200EA17A2 /* Controllers */,
+				4D2A15F626D7C7F500EA17A2 /* Models */,
+				4D2A15ED26D7C19E00EA17A2 /* Managers */,
 				4D2A15DC26D7BE7400EA17A2 /* Main.storyboard */,
 				4D2A15E226D7BE7600EA17A2 /* Assets.xcassets */,
 				4D2A15E426D7BE7600EA17A2 /* LaunchScreen.storyboard */,
@@ -68,6 +82,42 @@
 				4D2A15DF26D7BE7400EA17A2 /* Cinemaa.xcdatamodeld */,
 			);
 			path = Cinemaa;
+			sourceTree = "<group>";
+		};
+		4D2A15ED26D7C19E00EA17A2 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4D2A15EE26D7C1B000EA17A2 /* ImageFetch.swift */,
+				4D2A15F026D7C1D100EA17A2 /* DataManager.swift */,
+				4D2A15F226D7C20C00EA17A2 /* extension Array.swift */,
+				4D2A15F426D7C21F00EA17A2 /* SaveData.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		4D2A15F626D7C7F500EA17A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4D2A15F726D7C80300EA17A2 /* FilmModel.swift */,
+				4D2A15F926D7C82400EA17A2 /* TimeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4D2A15FC26D7C86200EA17A2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D2A15FD26D7C88E00EA17A2 /* MapViewController.swift */,
+				4D2A15FF26D7C8BD00EA17A2 /* TicketVC */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4D2A15FF26D7C8BD00EA17A2 /* TicketVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TicketVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +190,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D2A15DB26D7BE7400EA17A2 /* ViewController.swift in Sources */,
+				4D2A15EF26D7C1B000EA17A2 /* ImageFetch.swift in Sources */,
+				4D2A15F126D7C1D100EA17A2 /* DataManager.swift in Sources */,
+				4D2A15F326D7C20C00EA17A2 /* extension Array.swift in Sources */,
+				4D2A15FE26D7C88E00EA17A2 /* MapViewController.swift in Sources */,
+				4D2A15F826D7C80300EA17A2 /* FilmModel.swift in Sources */,
+				4D2A15FA26D7C82400EA17A2 /* TimeModel.swift in Sources */,
+				4D2A15F526D7C21F00EA17A2 /* SaveData.swift in Sources */,
 				4D2A15D726D7BE7400EA17A2 /* AppDelegate.swift in Sources */,
 				4D2A15E126D7BE7400EA17A2 /* Cinemaa.xcdatamodeld in Sources */,
 				4D2A15D926D7BE7400EA17A2 /* SceneDelegate.swift in Sources */,
