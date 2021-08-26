@@ -12,8 +12,7 @@ class ImagesCollectionViewCell: UICollectionViewCell {
     var modelView: ImagesModelViewProtocol! {
         didSet {
             DispatchQueue.main.async {
-                guard let image = self.modelView.imagesData else { return }
-                self.filmImages.image = UIImage(data: image)
+                self.filmImages.fetchImage(from: self.modelView.imagesString)
             }
         }
     }
