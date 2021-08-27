@@ -19,7 +19,6 @@ class InfoViewController: UIViewController {
     @IBOutlet var todayLabel: UILabel!
     @IBOutlet var tomorrowLabel: UILabel!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

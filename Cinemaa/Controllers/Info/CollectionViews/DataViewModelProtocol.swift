@@ -30,6 +30,4 @@ class DataViewModel: DataViewModelProtocol {
     required init(info: TimeModel) {
         self.info = info
     }
-    
-    
 }

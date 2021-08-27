@@ -20,6 +20,4 @@ class DataCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet var dataLabel: UILabel!
     @IBOutlet var priceLabel: UILabel!
-    
-    
 }

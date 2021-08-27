@@ -16,7 +16,9 @@ protocol InfoViewModelProtocol {
     var countTommorow: Int { get }
     var countImages: Int { get }
     var description: String { get }
+    
     init(dataFilmToday: [TimeModel], filmImage: [String], dataFilmTommorow: [TimeModel], description: String, filmName: String)
+    
     func imagesViewModel(for indexPath: IndexPath) -> ImagesModelViewProtocol?
     func dataViewModel(for indexPath: IndexPath) -> DataViewModelProtocol?
     func timeViewModel(for indexPath: IndexPath) -> TimeViewModelProtocol?

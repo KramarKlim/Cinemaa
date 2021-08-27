@@ -17,10 +17,6 @@ class CheckViewController: UIViewController {
     @IBOutlet var countLabel: UILabel!
     @IBOutlet var priceLabel: UILabel!
     
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUp()

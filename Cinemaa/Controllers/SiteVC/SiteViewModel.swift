@@ -17,7 +17,9 @@ protocol SiteViewModelProtocol {
     var sitsCount: [Int] { get set }
     var remove: Int? { get set}
     var sofa: [UIImage ] { get }
+    
     init(name: String, ticket: TimeModel)
+    
     func setIndexPath(for indexPath: IndexPath)
     func sofaViewModel(for indexPath: Int) -> SofaViewModelProtocol?
     func removeNeededSit(for numberOfSit: Int)

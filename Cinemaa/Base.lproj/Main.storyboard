@@ -319,18 +319,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="TST-j9-vjk">
-                                <rect key="frame" x="0.0" y="667" width="414" height="165"/>
+                                <rect key="frame" x="0.0" y="677" width="414" height="165"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CpC-GS-W1J">
                                     <size key="itemSize" width="94" height="95"/>
                                     <size key="estimatedItemSize" width="94" height="95"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="16" minY="10" maxX="16" maxY="10"/>
+                                    <inset key="sectionInset" minX="16" minY="0.0" maxX="16" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="time" id="fVn-G1-zXb" customClass="TimeCollectionViewCell" customModule="Cinemaa" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="35" width="94" height="95"/>
+                                        <rect key="frame" x="16" y="30" width="94" height="95"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WzV-WC-wXA">
                                             <rect key="frame" x="0.0" y="0.0" width="94" height="95"/>
@@ -392,7 +392,7 @@
                             <constraint firstItem="e2R-GL-c6m" firstAttribute="top" secondItem="kd8-2C-SRX" secondAttribute="bottom" constant="15" id="85K-WH-aGm"/>
                             <constraint firstItem="3dA-eL-xTQ" firstAttribute="trailing" secondItem="Dsk-OJ-LIY" secondAttribute="trailing" constant="16" id="A9R-kD-K5G"/>
                             <constraint firstItem="Mo7-Vg-Vkv" firstAttribute="leading" secondItem="3dA-eL-xTQ" secondAttribute="leading" id="ATm-TN-7Br"/>
-                            <constraint firstItem="3dA-eL-xTQ" firstAttribute="bottom" secondItem="TST-j9-vjk" secondAttribute="bottom" constant="30" id="EIB-O1-HIf"/>
+                            <constraint firstItem="3dA-eL-xTQ" firstAttribute="bottom" secondItem="TST-j9-vjk" secondAttribute="bottom" constant="20" id="EIB-O1-HIf"/>
                             <constraint firstItem="Dsk-OJ-LIY" firstAttribute="leading" secondItem="3dA-eL-xTQ" secondAttribute="leading" constant="16" id="Kcg-Y7-QJd"/>
                             <constraint firstItem="TST-j9-vjk" firstAttribute="leading" secondItem="kd8-2C-SRX" secondAttribute="leading" id="Kul-PO-KoW"/>
                             <constraint firstItem="TST-j9-vjk" firstAttribute="height" secondItem="O3W-s5-dcd" secondAttribute="height" multiplier="0.184408" id="L0A-GA-u1h"/>

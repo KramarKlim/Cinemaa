@@ -9,15 +9,12 @@ import UIKit
 
 class SiteViewController: UIViewController {
     
-    
-    
     var viewModel: SiteViewModelProtocol!
     
     @IBOutlet var priceButton: UIButton!
     
     @IBOutlet var sitesCollectionView: UICollectionView!
-    
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         sitesCollectionView.allowsMultipleSelection = true

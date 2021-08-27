@@ -9,7 +9,7 @@ import UIKit
 
 class FilmListCollectionViewController: UICollectionViewController {
     
-    var viewModel: FilmListViewModelProtocol = FilmListViewModel()
+    var viewModel: FilmListViewModelProtocol! = FilmListViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,11 +20,7 @@ class FilmListCollectionViewController: UICollectionViewController {
         super.viewDidAppear(animated)
         self.navigationController?.navigationBar.topItem?.title = "Фильмы"
     }
-
-
     // MARK: UICollectionViewDataSource
-
-
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel.count
     }

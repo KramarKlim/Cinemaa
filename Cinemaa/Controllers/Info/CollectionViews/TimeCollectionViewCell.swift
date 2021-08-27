@@ -19,8 +19,5 @@ class TimeCollectionViewCell: UICollectionViewCell {
     }
     
     @IBOutlet var timeLabel: UILabel!
-    
     @IBOutlet var costLabel: UILabel!
-    
-    
 }

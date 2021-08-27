@@ -18,5 +18,4 @@ class ImagesCollectionViewCell: UICollectionViewCell {
     }
     
     @IBOutlet var filmImages: UIImageView!
-    
 }
