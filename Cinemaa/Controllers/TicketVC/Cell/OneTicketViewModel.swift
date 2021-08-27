@@ -11,6 +11,7 @@ protocol OneTicketViewModelProtocol {
     var name: String { get }
     var time: String { get }
     var price: Int { get }
+    
     init(name: String, time: String, price: Int)
 }
 

@@ -10,6 +10,7 @@ import Foundation
 protocol ImagesModelViewProtocol {
     var imagesData: Data? { get }
     var imagesString: String { get }
+    
     init(imagesString: String)
 }
 

@@ -12,6 +12,7 @@ protocol DataViewModelProtocol {
     var data: String { get }
     var price: String { get }
     var info: TimeModel { get }
+    
     init(info: TimeModel)
 }
 

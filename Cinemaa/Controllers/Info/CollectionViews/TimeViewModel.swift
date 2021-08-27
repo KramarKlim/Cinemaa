@@ -12,6 +12,7 @@ protocol TimeViewModelProtocol {
     var time: String { get }
     var cost: String { get }
     var information: TimeModel { get }
+    
     init(information: TimeModel)
 }
 

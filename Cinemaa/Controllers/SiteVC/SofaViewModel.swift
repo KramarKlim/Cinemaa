@@ -17,5 +17,4 @@ class SofaViewModel: SofaViewModelProtocol {
     required init(sofaImage: UIImage) {
         self.sofaImage = sofaImage
     }
-    
 }

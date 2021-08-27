@@ -44,7 +44,6 @@ class SiteViewController: UIViewController {
         alert.addAction(alertAction)
         present(alert, animated: true, completion: nil)
     }
-    
 }
 
 extension SiteViewController: UICollectionViewDataSource, UICollectionViewDelegate {

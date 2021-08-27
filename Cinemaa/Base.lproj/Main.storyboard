@@ -594,16 +594,59 @@
                         <segue destination="aK7-Ti-14u" kind="relationship" relationship="viewControllers" id="Zfc-F9-ett"/>
                         <segue destination="yxi-eL-S4l" kind="relationship" relationship="viewControllers" id="QrN-vl-19m"/>
                         <segue destination="pdq-cN-v5X" kind="relationship" relationship="viewControllers" id="vR4-lQ-cgy"/>
+                        <segue destination="Quf-Ar-OfG" kind="relationship" relationship="viewControllers" id="kJl-3C-eFb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uJT-ay-yL7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1273.8461538461538" y="-83.175355450236964"/>
         </scene>
+        <!--Фильмы-->
+        <scene sceneID="X0Z-YV-cyG">
+            <objects>
+                <viewController id="Quf-Ar-OfG" customClass="ScrollFilmsViewController" customModule="Cinemaa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qqY-BF-slh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaC-Ad-cI0">
+                                <rect key="frame" x="0.0" y="88" width="414" height="667"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="UD4-Qc-9g8">
+                                <rect key="frame" x="146" y="763" width="122" height="28"/>
+                                <color key="pageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" systemColor="systemYellowColor"/>
+                                <connections>
+                                    <action selector="valueChanged:" destination="Quf-Ar-OfG" eventType="valueChanged" id="3uy-Jg-Kgw"/>
+                                </connections>
+                            </pageControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="k4u-8u-HLm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UD4-Qc-9g8" firstAttribute="centerX" secondItem="qqY-BF-slh" secondAttribute="centerX" id="4GJ-w0-iYM"/>
+                            <constraint firstItem="xaC-Ad-cI0" firstAttribute="top" secondItem="k4u-8u-HLm" secondAttribute="top" id="7ki-zS-iRO"/>
+                            <constraint firstItem="k4u-8u-HLm" firstAttribute="bottom" secondItem="UD4-Qc-9g8" secondAttribute="bottom" constant="22" id="ElO-xD-LHY"/>
+                            <constraint firstItem="xaC-Ad-cI0" firstAttribute="leading" secondItem="k4u-8u-HLm" secondAttribute="leading" id="FWu-e9-G6a"/>
+                            <constraint firstItem="k4u-8u-HLm" firstAttribute="bottom" secondItem="xaC-Ad-cI0" secondAttribute="bottom" constant="58" id="PnM-O1-m2u"/>
+                            <constraint firstItem="k4u-8u-HLm" firstAttribute="trailing" secondItem="xaC-Ad-cI0" secondAttribute="trailing" id="aXy-Jh-2Us"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Фильмы" image="list.and.film" catalog="system" id="GI0-Gx-x16"/>
+                    <connections>
+                        <outlet property="pageControl" destination="UD4-Qc-9g8" id="WQZ-Wr-kMR"/>
+                        <outlet property="scrollView" destination="xaC-Ad-cI0" id="YNP-Se-JjI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YvI-RI-vat" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="253.62318840579712" y="653.57142857142856"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Interiors_Sofa_1-copy-5" width="604" height="604"/>
         <image name="img_494907" width="981" height="796"/>
+        <image name="list.and.film" catalog="system" width="128" height="86"/>
         <image name="map" catalog="system" width="128" height="110"/>
         <image name="newspaper" catalog="system" width="128" height="108"/>
         <image name="ticket.fill" catalog="system" width="128" height="84"/>

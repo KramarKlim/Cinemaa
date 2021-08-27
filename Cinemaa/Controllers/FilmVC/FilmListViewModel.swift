@@ -9,10 +9,11 @@ import Foundation
 
 protocol FilmListViewModelProtocol {
     var count: Int { get }
-    func filmViewModel(for indexPath: IndexPath) -> FilmViewModelProtocol?
     var films: [FilmModel] { get }
+    
     func indexPath(for indexPath: IndexPath)
     func infoViewModel() -> InfoViewModelProtocol?
+    func filmViewModel(for indexPath: IndexPath) -> FilmViewModelProtocol?
 }
 
 class FilmListViewModel: FilmListViewModelProtocol {

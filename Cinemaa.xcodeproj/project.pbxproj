@@ -49,6 +49,8 @@
 		4D5B144F26D8EE4400AEB811 /* ImagesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D5B144D26D8EE4400AEB811 /* ImagesCollectionViewCell.xib */; };
 		4D5B145526D8EFC000AEB811 /* DataCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D5B145326D8EFC000AEB811 /* DataCollectionViewCell.xib */; };
 		4D5B145926D8F50400AEB811 /* TimeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D5B145726D8F50400AEB811 /* TimeCollectionViewCell.xib */; };
+		4D5B146026D918CC00AEB811 /* TimeVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5B145F26D918CC00AEB811 /* TimeVCModel.swift */; };
+		4D5B146226D91B0C00AEB811 /* ScrollFilmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5B146126D91B0C00AEB811 /* ScrollFilmsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +98,8 @@
 		4D5B144D26D8EE4400AEB811 /* ImagesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagesCollectionViewCell.xib; sourceTree = "<group>"; };
 		4D5B145326D8EFC000AEB811 /* DataCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataCollectionViewCell.xib; sourceTree = "<group>"; };
 		4D5B145726D8F50400AEB811 /* TimeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeCollectionViewCell.xib; sourceTree = "<group>"; };
+		4D5B145F26D918CC00AEB811 /* TimeVCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeVCModel.swift; sourceTree = "<group>"; };
+		4D5B146126D91B0C00AEB811 /* ScrollFilmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollFilmsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +163,7 @@
 			children = (
 				4D2A15F726D7C80300EA17A2 /* FilmModel.swift */,
 				4D2A15F926D7C82400EA17A2 /* TimeModel.swift */,
+				4D5B145F26D918CC00AEB811 /* TimeVCModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 				4D2A160A26D7CB8900EA17A2 /* Info */,
 				4D2A160026D7CA8300EA17A2 /* FilmVC */,
 				4D2A15FF26D7C8BD00EA17A2 /* TicketVC */,
+				4D5B146126D91B0C00AEB811 /* ScrollFilmsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -354,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D2A15EF26D7C1B000EA17A2 /* ImageFetch.swift in Sources */,
+				4D5B146026D918CC00AEB811 /* TimeVCModel.swift in Sources */,
 				4D2A161D26D7CCF700EA17A2 /* SiteViewController.swift in Sources */,
 				4D2A15F126D7C1D100EA17A2 /* DataManager.swift in Sources */,
 				4D2A161026D7CC0200EA17A2 /* ImagesCollectionViewCell.swift in Sources */,
@@ -380,6 +387,7 @@
 				4D2A160926D7CB3800EA17A2 /* FilmCollectionViewCell.swift in Sources */,
 				4D2A162326D7CD4000EA17A2 /* SofaCollectionViewCell.swift in Sources */,
 				4D2A161426D7CC4900EA17A2 /* DataCollectionViewCell.swift in Sources */,
+				4D5B146226D91B0C00AEB811 /* ScrollFilmsViewController.swift in Sources */,
 				4D2A15F526D7C21F00EA17A2 /* SaveData.swift in Sources */,
 				4D2A15D726D7BE7400EA17A2 /* AppDelegate.swift in Sources */,
 				4D2A15E126D7BE7400EA17A2 /* Cinemaa.xcdatamodeld in Sources */,

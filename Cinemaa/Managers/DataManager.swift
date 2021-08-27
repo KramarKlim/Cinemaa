@@ -179,4 +179,6 @@ class DataManager {
     let sofaImage: [UIImage] = [#imageLiteral(resourceName: "Interiors_Sofa_1-copy-5"), #imageLiteral(resourceName: "2887417")]
     
     let coordinateCinema: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 54.721319, longitude: 20.472418)
+    
+    let images: [UIImage] = [#imageLiteral(resourceName: "Побег"), #imageLiteral(resourceName: "АмериканскаяИстория"), #imageLiteral(resourceName: "ОстровПроклятых"), #imageLiteral(resourceName: "Джентельмены"), #imageLiteral(resourceName: "БойцовскийКлуб")]
 }
