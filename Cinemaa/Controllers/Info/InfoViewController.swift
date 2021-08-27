@@ -29,9 +29,13 @@ class InfoViewController: UIViewController {
         imagesCollectionView.dataSource = self
         dataCollectionView.dataSource = self
         timeCollectionView.dataSource = self
+        
         dataCollectionView.delegate = self
         timeCollectionView.delegate = self
-
+        
+        imagesCollectionView.register(UINib(nibName: "ImagesCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "images")
+        dataCollectionView.register(UINib(nibName: "DataCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "data")
+        timeCollectionView.register(UINib(nibName: "TimeCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "time")
     }
     
     
@@ -96,5 +100,6 @@ extension InfoViewController: UICollectionViewDataSource, UICollectionViewDelega
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let siteVC = segue.destination as! SiteViewController
         siteVC.viewModel = sender as? SiteViewModelProtocol
+        navigationItem.backButtonTitle = ""
     }
 }

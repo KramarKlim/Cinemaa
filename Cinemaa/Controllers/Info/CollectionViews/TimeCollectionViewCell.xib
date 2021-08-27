@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="time" id="gTV-IL-0wX" customClass="TimeCollectionViewCell" customModule="Cinemaa" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="94" height="95"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="94" height="95"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7S-Pn-z1p">
+                        <rect key="frame" x="0.0" y="0.0" width="94" height="54"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="54" id="yZm-oK-nqL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGF-L7-klF">
+                        <rect key="frame" x="0.0" y="54" width="94" height="41"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="41" id="wvW-iO-OPM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="BGF-L7-klF" secondAttribute="trailing" id="8iG-1Y-M72"/>
+                <constraint firstItem="BGF-L7-klF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="CNj-w1-ye1"/>
+                <constraint firstItem="g7S-Pn-z1p" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="MoK-YK-vry"/>
+                <constraint firstAttribute="trailing" secondItem="g7S-Pn-z1p" secondAttribute="trailing" id="k6j-zA-NV5"/>
+                <constraint firstItem="BGF-L7-klF" firstAttribute="top" secondItem="g7S-Pn-z1p" secondAttribute="bottom" id="ld7-7N-lMN"/>
+                <constraint firstItem="g7S-Pn-z1p" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vYf-gZ-QmH"/>
+                <constraint firstAttribute="bottom" secondItem="BGF-L7-klF" secondAttribute="bottom" id="zLj-ws-drF"/>
+            </constraints>
+            <connections>
+                <outlet property="costLabel" destination="BGF-L7-klF" id="s7u-wr-wNu"/>
+                <outlet property="timeLabel" destination="g7S-Pn-z1p" id="9jQ-dy-cD7"/>
+            </connections>
+            <point key="canvasLocation" x="111.59420289855073" y="84.709821428571431"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

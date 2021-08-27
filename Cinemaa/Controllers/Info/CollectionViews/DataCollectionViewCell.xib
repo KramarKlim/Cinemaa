@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="data" id="gTV-IL-0wX" customClass="DataCollectionViewCell" customModule="Cinemaa" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="94" height="95"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="94" height="95"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aew-4V-mhX">
+                        <rect key="frame" x="0.0" y="0.0" width="94" height="54"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="54" id="rzT-3E-1lI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7l-ta-LXi">
+                        <rect key="frame" x="0.0" y="54" width="94" height="41"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="41" id="Mqg-fG-sgE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="aew-4V-mhX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BpO-iH-Brb"/>
+                <constraint firstItem="i7l-ta-LXi" firstAttribute="top" secondItem="aew-4V-mhX" secondAttribute="bottom" id="Fq0-BI-i6j"/>
+                <constraint firstItem="aew-4V-mhX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="U9F-2F-mEH"/>
+                <constraint firstAttribute="trailing" secondItem="aew-4V-mhX" secondAttribute="trailing" id="bkG-1l-CNu"/>
+                <constraint firstAttribute="trailing" secondItem="i7l-ta-LXi" secondAttribute="trailing" id="dpU-iB-khO"/>
+                <constraint firstItem="i7l-ta-LXi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="loh-1I-tLb"/>
+                <constraint firstAttribute="bottom" secondItem="i7l-ta-LXi" secondAttribute="bottom" id="xEH-h1-rQn"/>
+            </constraints>
+            <connections>
+                <outlet property="dataLabel" destination="aew-4V-mhX" id="EUK-CJ-hme"/>
+                <outlet property="priceLabel" destination="i7l-ta-LXi" id="X84-iH-RE4"/>
+            </connections>
+            <point key="canvasLocation" x="111.59420289855073" y="84.709821428571431"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

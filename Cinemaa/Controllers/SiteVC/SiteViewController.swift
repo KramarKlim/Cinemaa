@@ -35,6 +35,7 @@ class SiteViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let checkVC = segue.destination as! CheckViewController
         checkVC.viewModel = sender as? CheckViewModelProtocol
+        navigationItem.backButtonTitle = ""
     }
     
     private func alert(title: String, message: String) {
@@ -48,7 +49,6 @@ class SiteViewController: UIViewController {
 
 extension SiteViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
         viewModel.count
     }
     

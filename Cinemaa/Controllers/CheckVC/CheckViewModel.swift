@@ -14,6 +14,7 @@ protocol CheckViewModelProtocol {
     var sits: [Int] { get }
     var data: TimeModel { get }
     var time: String { get }
+    
     init(data: TimeModel, name: String, count: Int, sits: [Int], price: Int)
 }
 

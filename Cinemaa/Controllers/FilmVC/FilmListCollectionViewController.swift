@@ -14,6 +14,7 @@ class FilmListCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.topItem?.title = "Фильмы"
+        self.collectionView.register(UINib(nibName: "FilmCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell")
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -44,5 +45,6 @@ class FilmListCollectionViewController: UICollectionViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let infoVC = segue.destination as! InfoViewController
         infoVC.viewModel = sender as? InfoViewModelProtocol
+        navigationItem.backButtonTitle = ""
     }
 }
