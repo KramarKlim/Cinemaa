@@ -28,7 +28,7 @@ class FilmListViewModel: FilmListViewModelProtocol {
         let film = films[indexPath.row]
         return FilmViewModel(film: film)
     }
-    
+    //MARK: ddd
     func indexPath(for indexPath: IndexPath) {
         self.indexPath = indexPath
     }
