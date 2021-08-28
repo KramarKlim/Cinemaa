@@ -16,6 +16,7 @@ protocol MapModelProtocol {
 }
 
 class MapModel: MapModelProtocol {
+    
     var locationManager: CLLocationManager = CLLocationManager()
     
     var manager: CLLocationManager = CLLocationManager()

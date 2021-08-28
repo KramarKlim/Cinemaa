@@ -9,8 +9,10 @@ import UIKit
 
 class TicketsTableViewController: UITableViewController {
     
+    //MARK: Public property
     var model: TicketsModelProtocol! = TicketModel()
     
+    //MARK: Override methods
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.topItem?.title = "Билеты"

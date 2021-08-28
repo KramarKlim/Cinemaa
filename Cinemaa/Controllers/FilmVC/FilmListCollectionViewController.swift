@@ -9,8 +9,10 @@ import UIKit
 
 class FilmListCollectionViewController: UICollectionViewController {
     
+    //MARK: Public property
     var viewModel: FilmListViewModelProtocol! = FilmListViewModel()
 
+    //MARK: Override methods
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.topItem?.title = "Фильмы"

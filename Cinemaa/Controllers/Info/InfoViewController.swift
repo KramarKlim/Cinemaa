@@ -9,8 +9,10 @@ import UIKit
 
 class InfoViewController: UIViewController {
     
+    //MARK: Public property
     var viewModel: InfoViewModelProtocol!
     
+    //MARK: IBOutlet
     @IBOutlet var imagesCollectionView: UICollectionView!
     @IBOutlet var dataCollectionView: UICollectionView!
     @IBOutlet var timeCollectionView: UICollectionView!
@@ -19,6 +21,8 @@ class InfoViewController: UIViewController {
     @IBOutlet var todayLabel: UILabel!
     @IBOutlet var tomorrowLabel: UILabel!
     
+    
+    //MARK: Override method
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,7 +42,7 @@ class InfoViewController: UIViewController {
         timeCollectionView.register(UINib(nibName: "TimeCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "time")
     }
     
-    
+    //MARK: IBAction
     @IBAction func didChangedSegment(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
             viewModel.firstSelected(descriptionLabel: descriptionLabel, todayLabel: todayLabel, tomorrowLabel: tomorrowLabel, dataCollectionView: dataCollectionView, timeCollectionView: timeCollectionView)
@@ -48,6 +52,7 @@ class InfoViewController: UIViewController {
     }
 }
 
+//MARK: UICollectionViewDataSource, UICollectionViewDelegate
 extension InfoViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch collectionView {

@@ -11,10 +11,13 @@ import CoreLocation
 
 class MapViewController: UIViewController {
     
+    //MARK: Public property
     var model: MapModelProtocol! = MapModel()
     
+    //MARK: IBOutlet
     @IBOutlet var locationMapView: MKMapView!
     
+    //MARK: Override methods
     override func viewDidLoad() {
         self.navigationController?.navigationBar.topItem?.title = "Карта"
     }
@@ -29,6 +32,7 @@ class MapViewController: UIViewController {
         locationMapView.showsUserLocation = true
     }
     
+    //MARK: Private method
     private func setUp() {
         locationMapView.addAnnotation(model.annotation)
         locationMapView.setRegion(model.region, animated: true)

@@ -9,12 +9,14 @@ import UIKit
 
 class SiteViewController: UIViewController {
     
+    //MARK: Public property
     var viewModel: SiteViewModelProtocol!
     
+    //MARK: IBOutlets
     @IBOutlet var priceButton: UIButton!
-    
     @IBOutlet var sitesCollectionView: UICollectionView!
-        
+    
+    //MARK: Override methods
     override func viewDidLoad() {
         super.viewDidLoad()
         sitesCollectionView.allowsMultipleSelection = true
@@ -23,6 +25,13 @@ class SiteViewController: UIViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let checkVC = segue.destination as! CheckViewController
+        checkVC.viewModel = sender as? CheckViewModelProtocol
+        navigationItem.backButtonTitle = ""
+    }
+    
+    //MARK: IBAction
     @IBAction func paymentButtonAction(_ sender: Any) {
         if viewModel.sitsNumber == 0 {
             alert(title: "Выберите место", message: "Вы не указали место")
@@ -32,12 +41,7 @@ class SiteViewController: UIViewController {
         }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let checkVC = segue.destination as! CheckViewController
-        checkVC.viewModel = sender as? CheckViewModelProtocol
-        navigationItem.backButtonTitle = ""
-    }
-    
+    //MARK: Private method
     private func alert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "ОК", style: .cancel, handler: nil)
@@ -46,6 +50,7 @@ class SiteViewController: UIViewController {
     }
 }
 
+//MARK: UICollectionViewDataSource, UICollectionViewDelegate
 extension SiteViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         viewModel.count
