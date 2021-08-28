@@ -9,5 +9,6 @@ import Foundation
 
 struct TimeVCModel {
     let description: String
-    let time: TimeModel
+    let today: [TimeModel]
+    let tomorrow: [TimeModel]
 }

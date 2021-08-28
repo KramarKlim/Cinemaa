@@ -147,7 +147,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="liR-wu-PRT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2201.5384615384614" y="1417.5355450236966"/>
+            <point key="canvasLocation" x="1272" y="654"/>
         </scene>
         <!--Info View Controller-->
         <scene sceneID="uQi-sm-yIS">
@@ -202,7 +202,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="kd8-2C-SRX">
-                                <rect key="frame" x="0.0" y="431" width="414" height="165.5"/>
+                                <rect key="frame" x="0.0" y="423" width="414" height="165"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XlZ-FL-yIO">
                                     <size key="itemSize" width="94" height="95"/>
@@ -213,7 +213,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="data" id="rFe-7q-htz" customClass="DataCollectionViewCell" customModule="Cinemaa" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="35.5" width="94" height="95"/>
+                                        <rect key="frame" x="16" y="35" width="94" height="95"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="749-kb-jEW">
                                             <rect key="frame" x="0.0" y="0.0" width="94" height="95"/>
@@ -224,7 +224,7 @@
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Завтра" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2R-GL-c6m">
-                                <rect key="frame" x="16" y="611.5" width="86" height="30"/>
+                                <rect key="frame" x="16" y="603" width="86" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -275,7 +275,7 @@
                             <constraint firstItem="CjQ-xp-THu" firstAttribute="leading" secondItem="3dA-eL-xTQ" secondAttribute="leading" id="dX1-QH-wqd"/>
                             <constraint firstItem="Mo7-Vg-Vkv" firstAttribute="height" secondItem="O3W-s5-dcd" secondAttribute="height" multiplier="0.21564" id="g6C-Bd-kB8"/>
                             <constraint firstItem="BGP-go-LWD" firstAttribute="top" secondItem="CjQ-xp-THu" secondAttribute="bottom" constant="32" id="gQx-n3-IaQ"/>
-                            <constraint firstItem="kd8-2C-SRX" firstAttribute="top" secondItem="BGP-go-LWD" secondAttribute="bottom" constant="18.329999999999998" id="i0V-TG-K3j"/>
+                            <constraint firstItem="kd8-2C-SRX" firstAttribute="top" secondItem="BGP-go-LWD" secondAttribute="bottom" constant="10" id="i0V-TG-K3j"/>
                             <constraint firstItem="e2R-GL-c6m" firstAttribute="leading" secondItem="3dA-eL-xTQ" secondAttribute="leading" constant="16" id="ifR-kL-Yjt"/>
                             <constraint firstItem="Mo7-Vg-Vkv" firstAttribute="width" secondItem="O3W-s5-dcd" secondAttribute="width" id="rXs-bq-ADP"/>
                             <constraint firstItem="CjQ-xp-THu" firstAttribute="trailing" secondItem="3dA-eL-xTQ" secondAttribute="trailing" id="u75-TG-nS9"/>
@@ -640,7 +640,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YvI-RI-vat" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="253.62318840579712" y="653.57142857142856"/>
+            <point key="canvasLocation" x="364" y="654"/>
         </scene>
     </scenes>
     <resources>
