@@ -19,7 +19,6 @@ class MapViewController: UIViewController {
     
     //MARK: Override methods
     override func viewDidLoad() {
-        self.navigationController?.navigationBar.topItem?.title = "Карта"
     }
     
     override func viewDidAppear(_ animated: Bool) {

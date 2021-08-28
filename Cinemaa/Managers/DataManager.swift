@@ -28,8 +28,6 @@ class DataManager {
     
     let coordinateCinema: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 54.721319, longitude: 20.472418)
     
-    let images: [UIImage] = [#imageLiteral(resourceName: "Побег"), #imageLiteral(resourceName: "АмериканскаяИстория"), #imageLiteral(resourceName: "ОстровПроклятых"), #imageLiteral(resourceName: "Джентельмены"), #imageLiteral(resourceName: "БойцовскийКлуб"), #imageLiteral(resourceName: "КартыДеньги"), #imageLiteral(resourceName: "Довод"), #imageLiteral(resourceName: "интерстеллар")]
-    
     let filmVC: [String: TimeVCModel] = [
         "Бойцовский клуб":
             TimeVCModel(

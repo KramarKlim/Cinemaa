@@ -15,7 +15,6 @@ class FilmListCollectionViewController: UICollectionViewController {
     //MARK: Override methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.topItem?.title = "Фильмы"
         self.collectionView.register(UINib(nibName: "FilmCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell")
     }
 

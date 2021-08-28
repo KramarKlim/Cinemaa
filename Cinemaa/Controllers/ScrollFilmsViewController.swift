@@ -46,12 +46,12 @@ class ScrollFilmsViewController: UIViewController, UIScrollViewDelegate {
         scrollView.delegate = self
         scrollView.isPagingEnabled = true
         
-        pageControl.numberOfPages = DataManager.shared.images.count
+        pageControl.numberOfPages = DataManager.shared.movies.count
         
-        for i in 0..<DataManager.shared.images.count {
+        for i in 0..<DataManager.shared.movies.count {
             let imageView = UIImageView()
             imageView.contentMode = .scaleToFill
-            imageView.image = DataManager.shared.images[i]
+            imageView.image = DataManager.shared.movies[i].image
             let xPos = CGFloat(i) * self.view.bounds.size.width
             imageView.frame = CGRect(x: xPos, y: 0, width: view.frame.size.width, height: scrollView.frame.size.height)
             scrollView.contentSize.width = view.frame.size.width*CGFloat(i+1)
