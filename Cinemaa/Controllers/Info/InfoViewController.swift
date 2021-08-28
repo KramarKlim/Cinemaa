@@ -24,7 +24,7 @@ class InfoViewController: UIViewController {
         
         descriptionLabel.isHidden = true
         
-        descriptionLabel.text = viewModel.description
+        descriptionLabel.text = viewModel.filmInfo.description
         
         imagesCollectionView.dataSource = self
         dataCollectionView.dataSource = self

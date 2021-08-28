@@ -8,16 +8,13 @@
 import UIKit
 
 protocol InfoViewModelProtocol {
+    var filmInfo: TimeVCModel { get }
     var filmName: String { get }
-    var dataFilmToday: [TimeModel] { get }
-    var dataFilmTommorow: [TimeModel] { get }
-    var filmImage: [String] { get }
     var countToday: Int { get }
     var countTommorow: Int { get }
     var countImages: Int { get }
-    var description: String { get }
     
-    init(dataFilmToday: [TimeModel], filmImage: [String], dataFilmTommorow: [TimeModel], description: String, filmName: String)
+    init(filmName: String)
     
     func imagesViewModel(for indexPath: IndexPath) -> ImagesModelViewProtocol?
     func dataViewModel(for indexPath: IndexPath) -> DataViewModelProtocol?
@@ -30,35 +27,27 @@ protocol InfoViewModelProtocol {
 }
 
 class InfoViewModel: InfoViewModelProtocol {
+    var filmInfo: TimeVCModel {
+        return DataManager.shared.filmVC["\(filmName)"]!
+    }
+    
     var countImages: Int {
-        filmImage.count
+        filmInfo.image.count
     }
     
     var countToday: Int {
-        dataFilmToday.count
+        filmInfo.today.count
     }
     
     var countTommorow: Int {
-        dataFilmTommorow.count
+        filmInfo.tomorrow.count
     }
     
     var indexPath: IndexPath?
     
-    var dataFilmTommorow: [TimeModel]
-    
-    var dataFilmToday: [TimeModel]
-    
-    var filmImage: [String]
-    
-    var description: String
-    
     var filmName: String
     
-    required init(dataFilmToday: [TimeModel], filmImage: [String], dataFilmTommorow: [TimeModel], description: String, filmName: String) {
-        self.dataFilmToday = dataFilmToday
-        self.filmImage = filmImage
-        self.dataFilmTommorow = dataFilmTommorow
-        self.description = description
+    required init(filmName: String) {
         self.filmName = filmName
     }
     
@@ -67,17 +56,17 @@ class InfoViewModel: InfoViewModelProtocol {
     }
     
     func imagesViewModel(for indexPath: IndexPath) -> ImagesModelViewProtocol? {
-        let image = filmImage[indexPath.row]
+        let image = filmInfo.image[indexPath.row]
         return ImagesModelView(imagesString: image)
     }
     
     func dataViewModel(for indexPath: IndexPath) -> DataViewModelProtocol? {
-        let data = dataFilmToday[indexPath.row]
+        let data = filmInfo.today[indexPath.row]
         return DataViewModel(info: data)
     }
     
     func timeViewModel(for indexPath: IndexPath) -> TimeViewModelProtocol? {
-        let time = dataFilmTommorow[indexPath.row]
+        let time = filmInfo.tomorrow[indexPath.row]
         return TimeViewModel(information: time)
     }
     
@@ -98,13 +87,13 @@ class InfoViewModel: InfoViewModelProtocol {
     
     func siteViewModelToday() -> SiteViewModelProtocol? {
         guard let indexPath = indexPath else { return nil}
-        let ticket = dataFilmToday[indexPath.row]
+        let ticket = filmInfo.today[indexPath.row]
         return SiteViewModel(name: filmName, ticket: ticket)
     }
 
     func siteViewModelTomorrow() -> SiteViewModelProtocol? {
         guard let indexPath = indexPath else { return nil}
-        let ticket = dataFilmTommorow[indexPath.row]
+        let ticket = filmInfo.tomorrow[indexPath.row]
         return SiteViewModel(name: filmName, ticket: ticket)
     }
 }

@@ -11,4 +11,5 @@ struct TimeVCModel {
     let description: String
     let today: [TimeModel]
     let tomorrow: [TimeModel]
+    let image: [String]
 }
